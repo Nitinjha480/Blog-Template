@@ -1,0 +1,274 @@
+nav {
+    height: 14vh;
+}
+
+header hr {
+    margin: auto;
+}
+
+main hr {
+    margin: 10px auto;
+}
+
+nav h1 {
+    font-size: 2rem;
+    color: rgb(92, 2, 176);
+}
+
+nav ul a,
+nav>a {
+    text-decoration: none;
+    color: black;
+    margin: 0 23px;
+    padding: 8px 8px;
+    position: relative;
+    z-index: 0;
+}
+
+.topSection div {
+    cursor: pointer;
+}
+
+.longCard {
+    height: 100%;
+    width: 40%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.vertiCard {
+    height: 100%;
+    width: 85%;
+    position: relative;
+    left: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.longCard span {
+    background-color: rgb(214, 182, 3);
+}
+
+.doubleCard .d1 span {
+    background-color: red;
+}
+
+.doubleCard .d2 span {
+    background-color: rgb(29, 29, 247);
+}
+
+.doubleCard {
+    height: 100%;
+    width: 85%;
+    position: relative;
+    left: 30px;
+    top: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.doubleCard div {
+    margin-left: 10px;
+    border-radius: 15px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.topSection p {
+    position: relative;
+    bottom: 120px;
+    width: 100%;
+    font-size: 0.8rem;
+    left: 5px;
+    color: white;
+}
+
+.topSection img {
+    height: 100%;
+    filter: brightness(75%);
+    transition: all 0.6s ease-in-out;
+}
+
+.topSection span {
+    bottom: 120px;
+    left: 5px;
+}
+
+.top {
+    padding: 10px 15px;
+}
+
+.blog {
+    flex: 3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.side {
+    flex: 1;
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.trending {
+    width: 100%;
+    height: 40vh;
+    color: grey;
+}
+
+.trending hr {
+    width: 15vw;
+}
+
+.trending h3 {
+    color: lightgrey;
+}
+
+.trend {
+    width: 100%;
+    height: 9vh;
+    padding: 10px 15px;
+}
+
+.trending .box {
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 28px;
+    cursor: pointer;
+    background-image: url("lifestyle.jpg");
+    background-size: cover;
+}
+
+.hide{
+    display: none;
+}
+
+.nav-content {
+    display: block;
+}
+
+.toggle-button {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 65vh;
+}
+
+.closebtn {
+    display: none;
+}
+
+.blogSection{
+    height: fit-content;
+}
+
+@media screen and (max-width: 900px) {
+    .topSection .longCard {
+        display: none;
+    }
+
+    .blogPost {
+        flex-direction: column;
+    }
+
+    .blog,
+    .side {
+        width: 100%;
+    }
+
+    .cardP {
+        width: 320px;
+    }
+
+    .vertiCard,
+    .doubleCard {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .nav-content {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        right: 78px;
+        top: 91px;
+        z-index: 2;
+    }
+
+    nav ul a {
+        margin: 5px 0;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    .nav-content {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100%;
+        background-color: lightgrey;
+        color: #fff;
+        overflow-y: auto;
+        z-index: 2;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+
+    .closebtn {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .blog {
+        grid-template-columns: auto;
+    }
+
+    .container {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .topSection {
+        display: none;
+    }
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+}
